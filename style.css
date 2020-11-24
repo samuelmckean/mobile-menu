@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#lorem-ipsum {
+  padding: 1rem;
+  overflow-y: scroll;
+  max-height: 85vh;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-menu:hover {
+  cursor: pointer;
+}
+
+.nav-menu .item {
+  flex-basis: 20%;
+  padding: 0.5em;
+  border-color: white;
+  border-width: 0.1px;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  border-style: solid;
+  background-color: blue;
+  opacity: 0.5;
+  transition: opacity 100ms ease-in-out;
+}
+
+.nav-menu .item.selected {
+  opacity: 1;
+}
